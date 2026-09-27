@@ -4,7 +4,7 @@ A scalable, secure, and production-ready **Order Management System** built with 
 
 This project models real-world e-commerce backend operations including role-based access control, catalog management with soft deletes, high-concurrency order placement with optimistic locking, and resilient payment lifecycle verification.
 
-## 🚀 Key Architectural & Engineering Highlights**:  
+## 🚀 Key Architectural & Engineering Highlights  
 **Stateless Authentication & RBAC**: Implemented stateless JWT token-based authentication using Spring Security OAuth2 Resource Server and Nimbus JOSE, isolating customer and admin endpoint authorization (ROLE_USER vs. ROLE_ADMIN).  
 **Concurrency & Race Condition Prevention**: Mitigated lost updates and phantom inventory depletion during simultaneous checkouts using JPA Optimistic Locking (@Version) on the Product entity.  
 **Database Optimization & N+1 Prevention**: Solved the Hibernate N+1 select query bottleneck in multi-tiered order retrieval by designing custom JOIN FETCH queries across Order, OrderItem, and Product graphs.  
