@@ -131,7 +131,7 @@ razorpay.key.secret=YOUR_RAZORPAY_TEST_KEY_SECRET
 ## 3. Build & Run Application  
 mvn clean install  
 mvn spring-boot:run  
-The application will start on http://localhost:8080.  
+The application will start on http://localhost:8080  
 
 ## 📖 Interactive Documentation & UI  
 Swagger UI Documentation: http://localhost:8080/swagger-ui/index.html  
