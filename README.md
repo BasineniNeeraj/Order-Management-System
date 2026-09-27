@@ -5,22 +5,22 @@ A scalable, secure, and production-ready **Order Management System** built with 
 This project models real-world e-commerce backend operations including role-based access control, catalog management with soft deletes, high-concurrency order placement with optimistic locking, and resilient payment lifecycle verification.
 
 ## 🚀 Key Architectural & Engineering Highlights**:
--> **Stateless Authentication & RBAC**: Implemented stateless JWT token-based authentication using Spring Security OAuth2 Resource Server and Nimbus JOSE, isolating customer and admin endpoint authorization (ROLE_USER vs. ROLE_ADMIN).
--> **Concurrency & Race Condition Prevention**: Mitigated lost updates and phantom inventory depletion during simultaneous checkouts using JPA Optimistic Locking (@Version) on the Product entity.
--> **Database Optimization & N+1 Prevention**: Solved the Hibernate N+1 select query bottleneck in multi-tiered order retrieval by designing custom JOIN FETCH queries across Order, OrderItem, and Product graphs.
--> **Resilient Payment Lifecycle Management**: Integrated Razorpay API with server-side signature verification. Designed custom transaction propagation (@Transactional(noRollbackFor = PaymentVerificationException.class)) to ensure failed payment audits persist even during runtime failures.
--> **Fault-Tolerant Catalog Design**: Implemented soft-deletion routines on products to maintain relational data integrity with historical orders and line items.
--> **Centralized API Contracts & Error Responses**: Standardized JSON responses using Java records and centralized exception handling (@RestControllerAdvice) covering HTTP 400, 403, 404, and 409 status codes.
+**Stateless Authentication & RBAC**: Implemented stateless JWT token-based authentication using Spring Security OAuth2 Resource Server and Nimbus JOSE, isolating customer and admin endpoint authorization (ROLE_USER vs. ROLE_ADMIN).
+**Concurrency & Race Condition Prevention**: Mitigated lost updates and phantom inventory depletion during simultaneous checkouts using JPA Optimistic Locking (@Version) on the Product entity.
+**Database Optimization & N+1 Prevention**: Solved the Hibernate N+1 select query bottleneck in multi-tiered order retrieval by designing custom JOIN FETCH queries across Order, OrderItem, and Product graphs.
+**Resilient Payment Lifecycle Management**: Integrated Razorpay API with server-side signature verification. Designed custom transaction propagation (@Transactional(noRollbackFor = PaymentVerificationException.class)) to ensure failed payment audits persist even during runtime failures.
+**Fault-Tolerant Catalog Design**: Implemented soft-deletion routines on products to maintain relational data integrity with historical orders and line items.
+**Centralized API Contracts & Error Responses**: Standardized JSON responses using Java records and centralized exception handling (@RestControllerAdvice) covering HTTP 400, 403, 404, and 409 status codes.
 
 ## 🛠️ Tech Stack & Tools
--> **Language**: Java 21
--> **Framework**: Spring Boot 4.0.5
--> **Security**: Spring Security 6, OAuth2 Resource Server, Nimbus JWT, BCrypt
--> **Persistence & ORM**: Spring Data JPA, Hibernate, MySQL 8
--> **API Documentation**: OpenAPI 3 / Swagger UI
--> **Payment Integration**: Razorpay Java SDK
--> **Build Tool**: Maven
--> **Utilities**: Lombok, Jakarta Validation
+**Language**: Java 21
+**Framework**: Spring Boot 4.0.5
+**Security**: Spring Security 6, OAuth2 Resource Server, Nimbus JWT, BCrypt
+**Persistence & ORM**: Spring Data JPA, Hibernate, MySQL 8
+**API Documentation**: OpenAPI 3 / Swagger UI
+**Payment Integration**: Razorpay Java SDK
+**Build Tool**: Maven
+**Utilities**: Lombok, Jakarta Validation
 
 ## 📐 System Architecture & ER Overview
 [ Client / Postman / Swagger UI / Webhook ]
@@ -52,7 +52,6 @@ Order 1 : N OrderItem N : 1 Product
 Order 1 : 1 Payment
 
 ## 📑 API Endpoints Summary
-
 1. Authentication — 1 API
 POST    /authenticate    Authenticate user/admin and generate JWT
 
