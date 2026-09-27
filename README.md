@@ -102,10 +102,10 @@ Order 1 : 1 Payment
 
 ## ⚙️ Local Setup & Installation
 **Prerequisites**
--> Java 21 or later installed
--> Maven 3.8+
--> MySQL 8.0+ running locally
--> Free Razorpay Account - https://accounts.razorpay.com (Test Mode)
+-> Java 21 or later installed  
+-> Maven 3.8+  
+-> MySQL 8.0+ running locally  
+-> Free Razorpay Account - https://accounts.razorpay.com (Test Mode)  
 
 ## 1. Clone the Repository
 git clone https://github.com/<your-username>/order-management-system.git
