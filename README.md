@@ -101,7 +101,7 @@ Order 1 : 1 Payment
 **GET**	    /admin/payments/{paymentId}	  Get payment by ID
 
 ## ⚙️ Local Setup & Installation
-**Prerequisites***
+**Prerequisites**
 -> Java 21 or later installed
 -> Maven 3.8+
 -> MySQL 8.0+ running locally
