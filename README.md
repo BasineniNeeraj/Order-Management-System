@@ -37,11 +37,10 @@ This project models real-world e-commerce backend operations including role-base
               ▼  
 [ Service Layer ]  
 (Business Logic, Transaction Boundaries)   
-              │  
-┌─────────────┴─────────────┐  
-▼                           ▼  
-[ Spring Data JPA ]       [ Razorpay Gateway ]  
-           │                     (Orders & Verification)  
+ ├── [ Spring Data JPA ]  
+ └── [ Razorpay Gateway ]  
+     (Orders & Verification)  
+           │                      
            ▼  
 [ MySQL Database ]  
 (Users, Products, Orders, OrderItems, Payments)  
