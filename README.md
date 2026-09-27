@@ -23,28 +23,28 @@ This project models real-world e-commerce backend operations including role-base
 **Utilities**: Lombok, Jakarta Validation  
 
 ## 📐 System Architecture & ER Overview  
-[ Client / Postman / Swagger UI / Webhook ]  
-                         │  
-                         ▼  
-          [ Spring Security Filter Chain ]  
-            ├── Basic Auth (Token Issuance)  
-            └── JWT Bearer Token Filter  
-                         │  
-                         ▼  
-             [ Controller Layer ]  
-        (Admin & Customer Endpoints)  
-                         │  
-                         ▼  
-               [ Service Layer ]  
-     (Business Logic, Transaction Boundaries)   
-                         │  
-           ┌─────────────┴─────────────┐  
-           ▼                           ▼  
+[ Client / Postman / Swagger UI]  
+              │  
+              ▼  
+[ Spring Security Filter Chain ]  
+  ├── Basic Auth (Token Issuance)  
+  └── JWT Bearer Token Filter  
+              │  
+              ▼  
+[ Controller Layer ]  
+(Admin & Customer Endpoints)  
+              │  
+              ▼  
+[ Service Layer ]  
+(Business Logic, Transaction Boundaries)   
+              │  
+┌─────────────┴─────────────┐  
+▼                           ▼  
 [ Spring Data JPA ]       [ Razorpay Gateway ]  
            │                     (Orders & Verification)  
            ▼  
- [ MySQL Database ]  
- (Users, Products, Orders, OrderItems, Payments)  
+[ MySQL Database ]  
+(Users, Products, Orders, OrderItems, Payments)  
 
 ## Relational Schema Summary  
 User 1 : N Order  
