@@ -53,52 +53,52 @@ Order 1 : 1 Payment
 
 ## 📑 API Endpoints Summary
 1. Authentication — 1 API
-POST    /authenticate    Authenticate user/admin and generate JWT
+**POST**    /authenticate    Authenticate user/admin and generate JWT
 
 2. Customer User — 5 APIs
-POST	  /customer/users/register	          Register customer
-GET	    /customer/users/profile	            Get logged-in user's profile
-PUT	    /customer/users/profile	            Update logged-in user's profile
-PATCH  	/customer/users/profile/password	  Change logged-in user's password
-DELETE	/customer/users/profile            	Delete logged-in user's account
+**POST**	  /customer/users/register	          Register customer
+**GET**	    /customer/users/profile	            Get logged-in user's profile
+**PUT**	    /customer/users/profile	            Update logged-in user's profile
+**PATCH**  	/customer/users/profile/password	  Change logged-in user's password
+**DELETE**	/customer/users/profile            	Delete logged-in user's account
 
 3. Admin User — 4 APIs
-POST	  /admin/users/register    Create admin
-GET	    /admin/users  	         Get all users
-GET	    /admin/users/{id}	       Get user by ID
-DELETE	/admin/users/{id}	       Delete user
+**POST**	  /admin/users/register    Create admin
+**GET**	    /admin/users  	         Get all users
+**GET**	    /admin/users/{id}	       Get user by ID
+**DELETE**	/admin/users/{id}	       Delete user
 
 4. Customer Product — 2 APIs
-GET    	/customer/products        Get all products
-GET	    /customer/products/{id}	  Get product by ID
+**GET**    	/customer/products        Get all products
+**GET**	    /customer/products/{id}	  Get product by ID
 
 5. Admin Product — 5 APIs
-POST	  /admin/products	          Create product
-GET	    /admin/products	          Get all products
-GET	    /admin/products/{id}	    Get product by ID
-PUT	    /admin/products/{id}	    Update product
-DELETE	/admin/products/{id}	    Delete product
+**POST**	  /admin/products	          Create product
+**GET**	    /admin/products	          Get all products
+**GET**	    /admin/products/{id}	    Get product by ID
+**PUT**	    /admin/products/{id}	    Update product
+**DELETE**	/admin/products/{id}	    Delete product
 
 6. Customer Order — 4 APIs
-POST	  /customer/orders	                  Create order
-GET	    /customer/orders/user	              Get logged-in user's orders
-GET	    /customer/orders/{orderId}	        Get own order by ID
-PATCH	  /customer/orders/{orderId}/cancel	  Cancel own order
+**POST**	  /customer/orders	                  Create order
+**GET**	    /customer/orders/user	              Get logged-in user's orders
+**GET**	    /customer/orders/{orderId}	        Get own order by ID
+**PATCH**	  /customer/orders/{orderId}/cancel	  Cancel own order
 
 7. Admin Order — 4 APIs
-GET	    /admin/orders	                      Get all orders
-GET	    /admin/orders/{orderId}	            Get order by ID
-GET	    /admin/orders/user/{userId}	        Get orders for a specific user
-PATCH	  /admin/orders/{orderId}/status	    Update order status
+**GET**	    /admin/orders	                      Get all orders
+**GET**	    /admin/orders/{orderId}	            Get order by ID
+**GET**	    /admin/orders/user/{userId}	        Get orders for a specific user
+**PATCH**	  /admin/orders/{orderId}/status	    Update order status
 
 8. Customer Payment — 3 APIs
-POST	  /customer/payments/orders/{orderId}	  Create Razorpay payment/order
-POST	  /customer/payments/verify             Verify Razorpay payment
-GET	    /customer/payments/{paymentId}	      Get customer's payment
+**POST**	  /customer/payments/orders/{orderId}	  Create Razorpay payment/order
+**POST**	  /customer/payments/verify             Verify Razorpay payment
+**GET**	    /customer/payments/{paymentId}	      Get customer's payment
 
 9. Admin Payment — 2 APIs
-GET	    /admin/payments	              Get all payments
-GET	    /admin/payments/{paymentId}	  Get payment by ID
+**GET**	    /admin/payments	              Get all payments
+**GET**	    /admin/payments/{paymentId}	  Get payment by ID
 
 ## ⚙️ Local Setup & Installation
 **Prerequisites***
