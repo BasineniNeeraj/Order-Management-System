@@ -123,9 +123,9 @@ spring.datasource.password=root
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
-# Jackson Configuration
+
 spring.jackson.mapper.accept-case-insensitive-enums=true
-# Razorpay Test Credentials
+
 razorpay.key.id=YOUR_RAZORPAY_TEST_KEY_ID
 razorpay.key.secret=YOUR_RAZORPAY_TEST_KEY_SECRET
 
